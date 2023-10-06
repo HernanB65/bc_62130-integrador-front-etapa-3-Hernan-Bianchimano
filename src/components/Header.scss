@@ -1,0 +1,183 @@
+/* ------------------------------------- */
+/* HEADER                                */
+/* ------------------------------------- */
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+     
+  
+    @media (max-width: 768px) {
+      & {
+        flex-direction: column-reverse;
+      }
+    }
+  
+  
+  }
+  
+  #menu {
+    display: none;
+  
+    &:checked + .nav-bar {
+      display: block;
+    }
+  
+    &:checked ~ .search-bar .menu-toogle__label {
+      background-color: black;
+  
+    }
+  
+  }
+  
+  /* ------------------------------------- */
+  /* NAVBAR                                */
+  /* ------------------------------------- */
+  
+  .nav-bar {
+    background-color: rgb(231, 225, 223);
+    border: 1px solid black;
+  
+      &__nav-list {
+      display: flex;
+      list-style-type: none;
+      justify-content: center;
+  
+      @media (max-width: 768px) {
+        & {
+          flex-direction: column;
+        }
+      }
+    }
+  
+    &__nav-item {
+      text-align: center;
+      background-color: pink;
+    }
+  
+    &__nav-link {
+      display: inline-flex;
+      background-color: rgb(231, 225, 223);
+      color: blueviolet;
+      font-size: 20px;
+      font-weight: 800;
+  
+      padding: 1em 2em;
+      text-decoration: none;
+    }
+  
+    @media (max-width: 768px) {
+      & {
+        display: none;
+      }
+    }
+  }
+  
+  /* ------------------------------------- */
+  /* SEARCH BAR                            */
+  /* ------------------------------------- */
+  
+  .search-bar {
+    background-color: rgb(140, 147, 126);
+    border: 1px solid black;
+    border-top: 0;
+    display: flex;
+    justify-content: space-between;
+  
+    &__logo-container,
+    &__form-container {
+      padding: 2em;
+    }
+  
+    &__logo-container {
+      background-color: rgb(223, 162, 207);
+      flex: 0 0 6em;
+      font-weight: 600;
+      color: blueviolet;
+      cursor:pointer
+    }
+  
+    &__form-container {
+      background-color: rgb(231, 225, 223);
+      display: flex;
+      flex-basis: 100%;
+      justify-content: center;
+    }
+  
+    &__form-label {
+      background-color: blueviolet;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      font-size: medium;
+      border: 1px solid black;
+      cursor: pointer;
+    }
+  
+    &__form-search {
+      background-color: #ddc9e0bc;
+      width: 70%;
+    }
+  
+    &__form-submit {
+      background-color: blueviolet;
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+      font-size: medium;
+      cursor: pointer;
+    }
+  
+    &__carrito-container {
+      flex: 0 0 5em; /* shorthand (grow shrink basis */
+      background-color: greenyellow;
+      cursor: pointer;
+    }
+  }
+  
+  /* ------------------------------------- */
+  /* MENU TOGGLE                           */
+  /* ------------------------------------- */
+  
+  .menu-toggle {
+    display: none;
+    background-color: red;
+    flex: 0 0 3em;
+    position: relative;
+    cursor: pointer;
+  
+    &__label {
+      display: block;
+      background-color: black;
+      height: 100%;
+    }
+  
+    &__top-bread,
+    &__meat,
+    &__bottom-bread {
+      display: block;
+      background-color: #333;
+      height: .2em;
+      position: absolute;
+      left: .5em;
+      right: .5em;
+    }
+  
+    &__top-bread {
+      top: .8em;
+    }
+  
+    &__meat {
+      top: 50%;
+      margin-top: -.1em;
+    }
+  
+    &__bottom-bread {
+      bottom: .8em;
+    }
+  
+    @media (max-width: 768px) {
+      & {
+        display: block;
+      }
+    }
+  }
+  
