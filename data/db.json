@@ -33,7 +33,8 @@
       "marca": "Sleek Cotton Chips",
       "categoria": "Refined",
       "id": 3,
-      "cantidad": 1
+      "cantidad": 1,
+      "envio": true
     },
     {
       "nombre": "Camara Canon",
@@ -44,7 +45,8 @@
       "marca": "Rustic Soft Tuna",
       "categoria": "Generic",
       "id": 4,
-      "cantidad": 3
+      "cantidad": 3,
+      "envio": false
     },
     {
       "nombre": "Samsung",
@@ -67,6 +69,7 @@
       "categoria": "Electronica",
       "detalles": "Natus iure quasi cupiditate quisquam facere molestiae odio neque rerum provident voluptas!",
       "foto": "img/chromecast-google.jpg",
+      "cantidad": 1,
       "envio": true
     },
     {
@@ -78,7 +81,19 @@
       "categoria": "Drones",
       "detalles": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "foto": "img/dji-mavic-2-pro.jpg",
+      "cantidad": 2,
       "envio": false
+    },
+    {
+      "id": 8,
+      "nombre": "Televisor 8K",
+      "precio": "222",
+      "stock": "2",
+      "marca": "Sorny",
+      "categoria": "Electro",
+      "detalles": "Nueva tele 8K",
+      "foto": "img/apple-iphone-11-pro-max.jpg",
+      "envío": true
     }
   ]
 }

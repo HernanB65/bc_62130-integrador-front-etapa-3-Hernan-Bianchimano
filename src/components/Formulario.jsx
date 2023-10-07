@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import ProductoContext from '../contexts/ProductoContext'
 
 const formInicial = {
@@ -13,9 +13,14 @@ const formInicial = {
   envío: false
 }
 
-const Formulario = () => {
+const Formulario = ({ productoAEditar, setProductoAEditar }) => {
   const [form, setForm] = useState(formInicial)
-  const { crearProductoContext } = useContext(ProductoContext)
+  const { crearProductoContext, actualizarProductoContext } = useContext(ProductoContext)
+
+  useEffect(() => {
+    productoAEditar ? setForm(productoAEditar) : setForm(formInicial)
+  }, [productoAEditar, setProductoAEditar])
+
 
   const handleChange = (e) => {
     const { type, name, checked, value } = e.target
@@ -27,18 +32,26 @@ const Formulario = () => {
     
   const handleSubmit = async (e) => {
     e.preventDefault() 
+    try {
+      if ( form.id === null ) {
+        await crearProductoContext(form)
+      } else {
+        await actualizarProductoContext(form)
+      }
+      handleReset()
+    } catch (error) {
+      console.error('Ocurrió un error en el handleSubmit', error)
+    }
     
-    await crearProductoContext(form)
-    
-  }
-
-  const handleReset = () => {
-
-  }
+}
+const handleReset = () => {
+  setForm(formInicial)
+  setProductoAEditar(null)
+}
   
   return (
     <>
-      <h3>Agregar : Editar</h3>
+      <h3>{productoAEditar ? 'Editando' : 'Agregando'}</h3>
 
       <form onSubmit={handleSubmit}> 
         <div>
