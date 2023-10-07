@@ -17,6 +17,7 @@ const Tabla = ({ setProductoAEditar }) => {
           <th>Categoria</th>
           <th>Detalles</th>
           <th>Foto</th>
+          <th>Cantidad</th>
           <th>Envío</th>
           <th>Acciones</th>
         </tr>

@@ -42,7 +42,7 @@ const ProductoProvider = ( { children } ) => {
             const nuevaDB = productos.map( producto => producto.id === productoEditado.id ? productoEditado : producto )
             setProductos(nuevaDB)
         } catch (error) {
-            console.log('ERROR en actualizarProductoContext', error);
+            console.error('ERROR en actualizarProductoContext', error);
         }
     }
 

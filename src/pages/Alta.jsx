@@ -8,7 +8,7 @@ const Alta = () => {
 
   return (
     <>
-      <h1>Formulario de alta de productos</h1>
+      <h1>Formulario de alta de producto</h1>
       <h2>Agregar producto</h2>
       <Formulario productoAEditar={productoAEditar} setProductoAEditar={setProductoAEditar}/>
       <hr />

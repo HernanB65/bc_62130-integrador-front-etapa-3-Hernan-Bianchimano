@@ -1,23 +1,23 @@
 {
   "productos": [
     {
+      "id": 1,
       "nombre": "IPhone 11 Pro Max",
-      "foto": "img/apple-iphone-11-pro-max.jpg",
-      "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
-      "precio": 250.5,
-      "stock": "4",
+      "precio": "250.5",
+      "stock": "33",
       "marca": "Apple",
       "categoria": "celulares",
-      "id": 1,
-      "envio": false,
-      "cantidad": 2
+      "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+      "foto": "img/apple-iphone-11-pro-max.jpg",
+      "cantidad": 3,
+      "envio": false
     },
     {
       "nombre": "IPhone 12",
-      "foto": "img/apple-iphone-12.jpg",
+      "foto": "img/apple-iphone-11-pro-max.jpg",
       "detalles": "Quasi cupiditate quisquam facere molestiae",
       "precio": 240.3,
-      "stock": "4",
+      "stock": 4,
       "marca": "Apple",
       "categoria": "celulares",
       "id": 2,
@@ -26,7 +26,7 @@
     },
     {
       "nombre": "Auriculares Sony",
-      "foto": "img/auriculares-sony.jpg",
+      "foto": "img/apple-iphone-11-pro-max.jpg",
       "detalles": "Saepe enim ipsa facilis velit quidem voluptatibus totam dicta",
       "precio": 985,
       "stock": 4,
@@ -34,7 +34,7 @@
       "categoria": "Refined",
       "id": 3,
       "cantidad": 1,
-      "envio": true
+      "envío": true
     },
     {
       "nombre": "Camara Canon",
@@ -56,9 +56,9 @@
       "stock": 4,
       "marca": "Samsung",
       "categoria": "celulares",
-      "id": 5,
-      "envio": true,
-      "cantidad": 5
+      "id": 2,
+      "cantidad": 1,
+      "envio": true
     },
     {
       "id": 6,
@@ -86,13 +86,14 @@
     },
     {
       "id": 8,
-      "nombre": "Televisor 8K",
+      "nombre": "Tele",
       "precio": "222",
       "stock": "2",
       "marca": "Sorny",
       "categoria": "Electro",
       "detalles": "Nueva tele 8K",
       "foto": "img/apple-iphone-11-pro-max.jpg",
+      "cantidad": "1",
       "envío": true
     }
   ]

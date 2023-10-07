@@ -7,13 +7,14 @@ const formInicial = {
   precio: '',
   stock: '',
   marca: '',
-  categoría: '',
+  categoria: '',
   detalles: '',
   foto: '',
+  cantidad: '',
   envío: false
 }
 
-const Formulario = ({ productoAEditar, setProductoAEditar }) => {
+const Formulario = ( { productoAEditar, setProductoAEditar } ) => {
   const [form, setForm] = useState(formInicial)
   const { crearProductoContext, actualizarProductoContext } = useContext(ProductoContext)
 
@@ -71,8 +72,8 @@ const handleReset = () => {
           <input type="text" name="marca" id="lbl-marca" value={form.marca} onChange={handleChange}  />
         </div>
         <div>
-          <label htmlFor="lbl-categoría">Categoría</label>
-          <input type="text" name="categoría" id="lbl-categoría" value={form.categoria} onChange={handleChange} />
+          <label htmlFor="lbl-categoria">Categoría</label>
+          <input type="text" name="categoria" id="lbl-categoria" value={form.categoria} onChange={handleChange} />
         </div>
         <div>
           <label htmlFor="lbl-detalles">Detalles</label>
@@ -83,9 +84,14 @@ const handleReset = () => {
           <input type="text" name="foto" id="lbl-foto" value={form.foto} onChange={handleChange}  />
         </div>
         <div>
+          <label htmlFor="lbl-cantidad">Cantidad</label>
+          <input type="text" name="cantidad" id="lbl-cantidad" value={form.cantidad} onChange ={handleChange} />
+        </div>
+        <div>
           <label htmlFor="lbl-envío">Envío</label>
           <input type="checkbox" name="envío" id="lbl-envío" checked={form.envío} onChange={handleChange}  />
         </div>
+
         <button type="submit">Guardar</button>
         <button type="reset" onClick={handleReset}>Limpiar</button>
          
