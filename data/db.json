@@ -14,7 +14,7 @@
     },
     {
       "nombre": "IPhone 12",
-      "foto": "img/apple-iphone-11-pro-max.jpg",
+      "foto": "img/apple-iphone-12.jpg",
       "detalles": "Quasi cupiditate quisquam facere molestiae",
       "precio": 240.3,
       "stock": 4,
@@ -26,7 +26,7 @@
     },
     {
       "nombre": "Auriculares Sony",
-      "foto": "img/apple-iphone-11-pro-max.jpg",
+      "foto": "img/auriculares-sony.jpg",
       "detalles": "Saepe enim ipsa facilis velit quidem voluptatibus totam dicta",
       "precio": 985,
       "stock": 4,
@@ -92,7 +92,7 @@
       "marca": "Sorny",
       "categoria": "Electro",
       "detalles": "Nueva tele 8K",
-      "foto": "img/apple-iphone-11-pro-max.jpg",
+      "foto": "img/televisor-lg.jpg",
       "cantidad": "1",
       "envío": true
     }
