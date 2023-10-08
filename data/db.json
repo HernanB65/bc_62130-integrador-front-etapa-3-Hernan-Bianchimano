@@ -95,6 +95,18 @@
       "foto": "img/televisor-lg.jpg",
       "cantidad": "1",
       "envío": true
+    },
+    {
+      "id": 9,
+      "nombre": "Producto X",
+      "precio": "2222",
+      "stock": "2",
+      "marca": "Sorny",
+      "categoria": "Electro",
+      "detalles": "Nueva tele 8K",
+      "foto": "img/apple-iphone-11-pro-max.jpg",
+      "cantidad": "1",
+      "envío": true
     }
   ]
 }
