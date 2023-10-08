@@ -2,10 +2,36 @@ import { useState } from "react"
 
 export const useLocalStorage = (clave, valorInicial = []) => {
 
+    const getValorAlmacenado = () => {
+        try {
+            const valorAlmacenado = window.localStorage.getItem(clave)
+            return valorAlmacenado ? JSON.parse(valorAlmacenado) : valorInicial
+        } catch (error) {
+            console.error(`Error al obtener ${clave} del localStorage ${error}`)
+            return valorInicial
+        }
+    }
 
+    const [valorAlmacenado, setValorAlmacenado] = useState(getValorAlmacenado)
 
-    const [valorAlmacenado, setValorAlmacenado] = useState()
+    const guardarValor = (valorNuevo) => {
+        try {
+            const nuevoValorAlmacenado = [...valorAlmacenado, valorNuevo]
+            setValorAlmacenado(nuevoValorAlmacenado)
+            window.localStorage.setItem(clave, JSON.stringify(nuevoValorAlmacenado))
+        } catch (error) {
+            console.error(`Error al guardar ${clave} del localStorage: ${error}`)
+        }
+    }
 
-    return []
+    const eliminarValor = (id) => {
+
+    }
+
+    const limpiarStorage = () => {
+
+    }
+    
+    return [guardarValor, eliminarValor, limpiarStorage, valorAlmacenado]
 
 }
