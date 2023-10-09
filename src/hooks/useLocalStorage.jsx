@@ -25,11 +25,21 @@ export const useLocalStorage = (clave, valorInicial = []) => {
     }
 
     const eliminarValor = (id) => {
-
+        try {
+            const nuevoValorAlmacenado = [...valorAlmacenado]
+            const indice = nuevoValorAlmacenado.findIndex(item => item.id === id)
+            nuevoValorAlmacenado.splice(indice, 1)
+            setValorAlmacenado(nuevoValorAlmacenado)
+            window.localStorage.setItem(clave, JSON.stringify(nuevoValorAlmacenado))
+        } catch (error) {
+            console.error(`Error al eliminar ${clave} del localStorage ${error}`)
+        }
     }
 
     const limpiarStorage = () => {
-
+        window.localStorage.clear()
+        window.localStorage.setItem(clave, JSON.stringify(valorInicial))
+        setValorAlmacenado(valorInicial)
     }
     
     return [guardarValor, eliminarValor, limpiarStorage, valorAlmacenado]

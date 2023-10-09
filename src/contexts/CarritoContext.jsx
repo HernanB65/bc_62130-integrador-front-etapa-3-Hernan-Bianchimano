@@ -11,14 +11,17 @@ const CarritoProvider = ( { children } ) => {
     }
     
     const eliminarCarritoContext = (id) => {
-        // eliminarDelCarrito(id)
+        eliminarDelCarrito(id)
     }
 
     const guardarCarritoContext = () => {
+    /* Petición asincrónica a nuestro backend */
+    /* Limpiar el localStorage */
+    limpiarCarrito()
 
-    }
+}
     
-    const data = {agregarCarritoContext, eliminarCarritoContext, guardarCarritoContext}
+    const data = {carrito, agregarCarritoContext, eliminarCarritoContext, guardarCarritoContext}
     
     return <CarritoContext.Provider value={data}>{children}</CarritoContext.Provider>
 }
