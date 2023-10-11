@@ -9,7 +9,6 @@
       "categoria": "celulares",
       "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
       "foto": "img/apple-iphone-11-pro-max.jpg",
-      "cantidad": 3,
       "envio": false
     },
     {
@@ -21,8 +20,7 @@
       "marca": "Apple",
       "categoria": "celulares",
       "id": 2,
-      "envio": true,
-      "cantidad": 2
+      "envio": true
     },
     {
       "nombre": "Auriculares Sony",
@@ -33,7 +31,6 @@
       "marca": "Sleek Cotton Chips",
       "categoria": "Refined",
       "id": 3,
-      "cantidad": 1,
       "envío": true
     },
     {
@@ -45,7 +42,6 @@
       "marca": "Rustic Soft Tuna",
       "categoria": "Generic",
       "id": 4,
-      "cantidad": 3,
       "envio": false
     },
     {
@@ -57,7 +53,6 @@
       "marca": "Samsung",
       "categoria": "celulares",
       "id": 2,
-      "cantidad": 1,
       "envio": true
     },
     {
@@ -69,7 +64,6 @@
       "categoria": "Electronica",
       "detalles": "Natus iure quasi cupiditate quisquam facere molestiae odio neque rerum provident voluptas!",
       "foto": "img/chromecast-google.jpg",
-      "cantidad": 1,
       "envio": true
     },
     {
@@ -81,7 +75,6 @@
       "categoria": "Drones",
       "detalles": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "foto": "img/dji-mavic-2-pro.jpg",
-      "cantidad": 2,
       "envio": false
     },
     {
@@ -93,7 +86,6 @@
       "categoria": "Electro",
       "detalles": "Nueva tele 8K",
       "foto": "img/televisor-lg.jpg",
-      "cantidad": "1",
       "envío": true
     },
     {
@@ -105,8 +97,125 @@
       "categoria": "Electro",
       "detalles": "Nueva tele 8K",
       "foto": "img/apple-iphone-11-pro-max.jpg",
-      "cantidad": "1",
       "envío": true
     }
+  ],
+  "carrito": [
+    [
+      {
+        "id": 1,
+        "nombre": "IPhone 11 Pro Max",
+        "precio": "250.5",
+        "stock": "33",
+        "marca": "Apple",
+        "categoria": "celulares",
+        "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+        "foto": "img/apple-iphone-11-pro-max.jpg",
+        "envio": false,
+        "cantidad": 1
+      },
+      {
+        "nombre": "IPhone 12",
+        "foto": "img/apple-iphone-12.jpg",
+        "detalles": "Quasi cupiditate quisquam facere molestiae",
+        "precio": 240.3,
+        "stock": 4,
+        "marca": "Apple",
+        "categoria": "celulares",
+        "id": 2,
+        "envio": true,
+        "cantidad": 1
+      },
+      {
+        "nombre": "Auriculares Sony",
+        "foto": "img/auriculares-sony.jpg",
+        "detalles": "Saepe enim ipsa facilis velit quidem voluptatibus totam dicta",
+        "precio": 985,
+        "stock": 4,
+        "marca": "Sleek Cotton Chips",
+        "categoria": "Refined",
+        "id": 3,
+        "envío": true,
+        "cantidad": 1
+      }
+    ],
+    [
+      {
+        "id": 1,
+        "nombre": "IPhone 11 Pro Max",
+        "precio": "250.5",
+        "stock": "33",
+        "marca": "Apple",
+        "categoria": "celulares",
+        "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+        "foto": "img/apple-iphone-11-pro-max.jpg",
+        "envio": false,
+        "cantidad": 2
+      },
+      {
+        "id": 1,
+        "nombre": "IPhone 11 Pro Max",
+        "precio": "250.5",
+        "stock": "33",
+        "marca": "Apple",
+        "categoria": "celulares",
+        "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+        "foto": "img/apple-iphone-11-pro-max.jpg",
+        "envio": false,
+        "cantidad": 2
+      },
+      {
+        "nombre": "IPhone 12",
+        "foto": "img/apple-iphone-12.jpg",
+        "detalles": "Quasi cupiditate quisquam facere molestiae",
+        "precio": 240.3,
+        "stock": 4,
+        "marca": "Apple",
+        "categoria": "celulares",
+        "id": 2,
+        "envio": true,
+        "cantidad": 2
+      },
+      {
+        "nombre": "IPhone 12",
+        "foto": "img/apple-iphone-12.jpg",
+        "detalles": "Quasi cupiditate quisquam facere molestiae",
+        "precio": 240.3,
+        "stock": 4,
+        "marca": "Apple",
+        "categoria": "celulares",
+        "id": 2,
+        "envio": true,
+        "cantidad": 2
+      }
+    ],
+    [
+      {
+        "id": 1,
+        "nombre": "IPhone 11 Pro Max",
+        "precio": "250.5",
+        "stock": "33",
+        "marca": "Apple",
+        "categoria": "celulares",
+        "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+        "foto": "img/apple-iphone-11-pro-max.jpg",
+        "envio": false,
+        "cantidad": 1
+      }
+    ],
+    [
+      {
+        "id": 1,
+        "nombre": "IPhone 11 Pro Max",
+        "precio": "250.5",
+        "stock": "33",
+        "marca": "Apple",
+        "categoria": "celulares",
+        "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+        "foto": "img/apple-iphone-11-pro-max.jpg",
+        "envio": false,
+        "cantidad": 1
+      }
+    ]
   ]
 }
