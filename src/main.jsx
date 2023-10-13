@@ -4,15 +4,16 @@ import './index.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import Inicio from './pages/Inicio.jsx'
-import ALta from './pages/ALta'
+
 import Nosotros from './pages/Nosotros'
 import Contacto from './pages/Contacto'
 import Carrito from './pages/Carrito'
-
+import Alta from './pages/ALta'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import { ProductoProvider } from './contexts/ProductoContext'
 import { CarritoProvider } from './contexts/CarritoContext'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 <React.StrictMode>
@@ -21,7 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Header />
         <Routes>
-           <Route path="/alta" element={<ALta/>} />
+           <Route path="/alta" element={<Alta/>} />
            <Route path="/" element={<Inicio />} />
            <Route path="/nosotros" element={<Nosotros />} />
            <Route path="/contacto" element={<Contacto />} />
