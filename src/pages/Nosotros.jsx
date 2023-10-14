@@ -1,4 +1,4 @@
-import React from 'react'
+import './Nosotros.scss'
 
 const Nosotros = () => {
   return (
