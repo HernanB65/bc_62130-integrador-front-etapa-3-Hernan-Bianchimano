@@ -81,39 +81,6 @@
       "detalles": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "foto": "img/dji-mavic-2-pro.jpg",
       "envio": false
-    },
-    {
-      "id": 8,
-      "nombre": "Televisor 8K",
-      "precio": "2222",
-      "stock": "2",
-      "marca": "Sorny",
-      "categoria": "Electro",
-      "detalles": "Nueva tele 8K",
-      "foto": "img/apple-iphone-11-pro-max.jpg",
-      "envio": true
-    },
-    {
-      "id": 9,
-      "nombre": "Producto X",
-      "precio": "2222",
-      "stock": "2",
-      "marca": "Sorny",
-      "categoria": "Electro",
-      "detalles": "Nueva tele 8K",
-      "foto": "img/apple-iphone-11-pro-max.jpg",
-      "envio": true
-    },
-    {
-      "id": 10,
-      "nombre": "Maxi",
-      "precio": "2222",
-      "stock": "2",
-      "marca": "Sony",
-      "categoria": "Electro",
-      "detalles": "Nuevo producto",
-      "foto": "img/apple-iphone-11-pro-max.jpg",
-      "envio": false
     }
   ],
   "carrito": []
