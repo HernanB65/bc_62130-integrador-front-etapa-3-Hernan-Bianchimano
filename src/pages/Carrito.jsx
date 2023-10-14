@@ -23,7 +23,7 @@ const handleComprar = () => {
   return (
     <>    
     <h1>Productos en el carrito</h1>
-    { !carrito.length <= 0 && <button onClick={handleComprar}>Comprar</button>}
+    { !carrito.length <= 0 && <button onClick={handleComprar}></button>}
     <button onClick={handleComprar}>Comprar</button>
     <table className="tabla-carrito">
       <thead>
