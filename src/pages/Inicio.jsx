@@ -21,12 +21,10 @@ const Inicio = () => {
               <Card key={idx} producto={producto} />
             )) 
           }
-           
-
-          </div> 
-  
-      </section> 
-    </main> 
+      
+      </div> 
+    </section> 
+  </main> 
   </>
   )
 }

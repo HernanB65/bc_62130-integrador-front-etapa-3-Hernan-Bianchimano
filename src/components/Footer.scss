@@ -1,0 +1,100 @@
+/* ----------------------------------------- */
+/* FOOTER                                    */
+/* ----------------------------------------- */
+
+footer {
+    background-color: rgb(231, 225, 223);
+    border: 1px solid black;
+    text-align: center; /* Para centrar el contenido del footer */
+    padding: 1px 0; /* Agregar un poco de espacio alrededor del contenido */
+    font-size:larger;
+
+    header {
+      padding: 30px;
+    }
+  }
+
+  /* Estilos para el botón principal */
+  .main-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: blueviolet;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 3px solid black;
+    margin: 10px 40px; /* Agregar espacio horizontal entre elementos */
+  }
+  
+  /* Estilos para el grupo de botones sociales */
+  .social-buttons {
+    margin-top: 1px;
+  }
+  
+  .social-buttons a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 15px;
+    color: black;
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 10px;
+  }
+  
+  .center-logos {
+    padding-top: 20px;
+    color: #fff;
+    font-weight: 900;
+  }
+  
+  .right-logo {
+    text-align: right;
+    margin-top: 10px;
+  }
+  
+  /* Estilos para los enlaces */
+  .ig_base, .twitter_base, .facebook_button {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Estilos para los enlaces al pasar el mouse por encima */
+  .private_weirdo:hover, .ig_base:hover, .twitter_base:hover, .facebook_button:hover {
+    text-decoration: underline;
+  }
+
+  .weirdo-fish {
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 150px;
+    position: absolute;
+  }
+
+  .weirdo-fish img {
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+  }
+
+  .weirdo-fish:hover img {
+    transform: translateX(100px);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .weirdo-fish {
+      text-align: center;
+      padding: 10px;
+      position: static;
+    }
+
+    .weirdo-fish img {
+      max-width: 100%;
+      height: auto;
+      transform: none;
+    }
+  }
+  
+
+   
