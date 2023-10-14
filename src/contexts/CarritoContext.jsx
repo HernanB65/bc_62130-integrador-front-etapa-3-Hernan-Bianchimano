@@ -25,12 +25,11 @@ const CarritoProvider = ( { children } ) => {
         } else {
             const productoDeCarrito = obtenerProductoDeCarrito(producto)
             console.log(productoDeCarrito)
-            //eliminarDelCarrito(productoDeCarrito.id)
+            
             productoDeCarrito.cantidad++
             window.localStorage.setItem('carrito', JSON.stringify(carrito))
         }
-        
-        
+          
     }
     
     const eliminarCarritoContext = (id) => {
@@ -42,11 +41,11 @@ const CarritoProvider = ( { children } ) => {
         try {
             const resultado = await post(url, carrito)
             console.log(resultado)
-            limpiarCarrito()
-        
         } catch (error) {
-            console.error('Ocurrió un error en guardarCarritoContext()', error)
+            console.error(`Ocurrió un error en guardarCarritoContext()`, error)
         }
+    
+        limpiarCarrito()
     
     }
     

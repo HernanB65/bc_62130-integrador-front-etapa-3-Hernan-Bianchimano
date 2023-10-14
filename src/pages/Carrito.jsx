@@ -6,8 +6,7 @@ const Carrito = () => {
 const { carrito, eliminarCarritoContext, guardarCarritoContext } = useContext(CarritoContext)
 
 const handleEliminar = (id) => {
-  //console.log(id)
-  eliminarCarritoContext(id)
+    eliminarCarritoContext(id)
 }
 
 const calcularTotal = () => {
@@ -25,6 +24,7 @@ const handleComprar = () => {
     <>    
     <h1>Productos en el carrito</h1>
     { !carrito.length <= 0 && <button onClick={handleComprar}>Comprar</button>}
+    <button onClick={handleComprar}>Comprar</button>
     <table className="tabla-carrito">
       <thead>
         <tr>

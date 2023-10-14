@@ -27,9 +27,8 @@ const Header = () => {
             <span className="menu-toggle__bottom-bread"></span>
           </label>
         </div>
-      
     </header>
   )
 }
 
-export default Header;
+export default Header

@@ -33,7 +33,6 @@ const TablaFila = ({ producto, setProductoAEditar }) => {
       <td>
         <img id="img-row" src={producto.foto} alt={producto.nombre} />
       </td>
-      <td>{producto.cantidad}</td>
       <td>{producto.envio ? 'SI' : 'NO'}</td>
       <td>
         <button onClick={() => handleUpdate(producto)}>Editar</button>

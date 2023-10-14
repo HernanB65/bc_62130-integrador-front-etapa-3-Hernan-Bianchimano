@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Formulario from '../components/Formulario'
 import Tabla from '../components/Tabla'
 

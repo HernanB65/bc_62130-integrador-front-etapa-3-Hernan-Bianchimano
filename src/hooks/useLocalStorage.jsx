@@ -12,7 +12,7 @@ export const useLocalStorage = (clave, valorInicial = []) => {
         }
     }
 
-    const [valorAlmacenado, setValorAlmacenado] = useState(getValorAlmacenado)
+    const [valorAlmacenado, setValorAlmacenado] = useState(getValorAlmacenado())
 
     const guardarValor = (valorNuevo) => {
         try {

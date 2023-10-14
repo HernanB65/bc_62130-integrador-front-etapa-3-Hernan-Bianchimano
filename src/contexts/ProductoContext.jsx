@@ -1,11 +1,8 @@
 import { createContext, useEffect, useState } from "react";
 import {del, get, post, put} from "../utils/http";
 
-/* Creando CONTEXTO */
-/* 1ero -> Creación del contexto */
 const ProductoContext = createContext()
 
-/* 2do -> El armado del Provider */
 const url = 'http://localhost:8080/productos/'
 
 const ProductoProvider = ( { children } ) => {
@@ -13,7 +10,7 @@ const ProductoProvider = ( { children } ) => {
 
     useEffect(() => {
         obtenerProductos()
-    }, []) // Array vacío (se ejecuta solo una vez)
+    }, []) 
 
 
     const obtenerProductos = async () => {
@@ -49,7 +46,7 @@ const ProductoProvider = ( { children } ) => {
     const eliminarProductoContext = async (id) => {
         try {
             const productoEliminado = await del(url, id)
-            console.log(productoEliminado) // {}
+            console.log(productoEliminado) 
             const nuevaDB = productos.filter(producto => producto.id !== id)
             setProductos(nuevaDB)
         } catch (error) {
@@ -58,12 +55,11 @@ const ProductoProvider = ( { children } ) => {
         }
     }
 
-               const data = { productos, crearProductoContext, eliminarProductoContext, actualizarProductoContext }
+    const data = { productos, crearProductoContext, eliminarProductoContext, actualizarProductoContext }
     
     return <ProductoContext.Provider value={data}>{children}</ProductoContext.Provider>
 }
 
-/* 3ro -> Exportaciones */
 export { ProductoProvider }
 
 export default ProductoContext
