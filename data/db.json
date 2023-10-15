@@ -69,7 +69,8 @@
       "categoria": "Electronica",
       "detalles": "Natus iure quasi cupiditate quisquam facere molestiae odio neque rerum provident voluptas!",
       "foto": "img/chromecast-google.jpg",
-      "envio": true
+      "envio": true,
+      "cantidad": 3
     },
     {
       "id": 7,
@@ -80,7 +81,8 @@
       "categoria": "Drones",
       "detalles": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "foto": "img/dji-mavic-2-pro.jpg",
-      "envio": false
+      "envio": false,
+      "cantidad": 2
     }
   ],
   "carrito": [
