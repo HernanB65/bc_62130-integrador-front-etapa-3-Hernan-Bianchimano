@@ -65,4 +65,3 @@ const CarritoProvider = ( { children} ) => {
 export { CarritoProvider }
 
 export default CarritoContext
-

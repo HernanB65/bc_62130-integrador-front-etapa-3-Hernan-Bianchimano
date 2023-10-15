@@ -12,7 +12,7 @@ const Card = ({ producto }) => {
       title: 'Muy buena elección!!!',
       text: '¡Asegurá tu compra!!!',
       imageUrl: producto.foto, 
-      text: producto.nombre,
+      validationMessage: producto.nombre,
       imageWidth: 120, // Tamaño personalizado de la imagen
       icon: 'info',
       showCancelButton: true,

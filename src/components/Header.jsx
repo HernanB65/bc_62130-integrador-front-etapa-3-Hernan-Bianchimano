@@ -17,7 +17,7 @@ const Header = () => {
           <input type="submit" value="Buscar" className="search-bar__form-submit" />
         </form>
         <Link className="search-bar__carrito-container" to="/carrito">
-          <img src="public/img/carrito.png" alt="carrito de compras" />
+          <img src="img/carrito.png" alt="carrito de compras" />
         </Link>
       </div>
       <div className="menu-toggle">
