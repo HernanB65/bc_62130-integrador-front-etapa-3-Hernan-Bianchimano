@@ -3,8 +3,10 @@ import "./Header.scss";
 import Navbar from "./Navbar";
 
 const Header = () => {
-  return (
-    <header className="main-header">
+    return (
+    <header>
+      <div className="container" />
+      <div className="header-content"></div>
       <input type="checkbox" id="menu" />
       <Navbar />
       <div className="search-bar">

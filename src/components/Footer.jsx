@@ -29,6 +29,7 @@ const Footer = () => {
               <img src="img/logo_wapp.png" alt="whatsapp" />Contactanos!</a>
           </div>
           
+          
         </div>
   
       </footer>
