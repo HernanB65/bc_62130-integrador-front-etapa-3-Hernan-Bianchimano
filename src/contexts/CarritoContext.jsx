@@ -2,6 +2,7 @@ import { createContext } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import { post } from "../utils/http";
 
+
 /* CREANDO CONTEXTO */
 /* 1er -> Creación del contexto */
 const CarritoContext = createContext()
@@ -44,14 +45,16 @@ const CarritoProvider = ( { children} ) => {
         try {
            const resultado = await post(url, carrito) 
            console.log(resultado)
+           limpiarCarrito()
+
         } catch (error) {
             console.error(`Ocurrio un error en guardarCarritoContext()`, error)
         }
-        /* Petición asincronica a nuestro banckend */
+        /* Petición asincronica a nuestro backend */
 
 
         /* limpieza del localStorage */
-        limpiarCarrito()
+        
         
     }
 

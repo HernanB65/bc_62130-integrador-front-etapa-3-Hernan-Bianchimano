@@ -7,7 +7,8 @@ import Swal from 'sweetalert2'
 const Card = ({ producto }) => {
   const { agregarCarritoContext } = useContext(CarritoContext)
   
-  const handleAgregarClick = () => {
+    const handleAgregarClick = (producto) => {
+      console.log(producto)
     Swal.fire({
       title: 'Muy buena elección!!!',
       text: '¡Asegurá tu compra!!!',
@@ -23,7 +24,7 @@ const Card = ({ producto }) => {
         agregarCarritoContext(producto);
         Swal.fire('¡Agregado!', 'El producto ha sido agregado al carrito.', 'success');
       }
-    })
+    }) 
   }
  
   

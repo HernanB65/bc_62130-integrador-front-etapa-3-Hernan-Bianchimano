@@ -12,21 +12,21 @@ const Footer = () => {
         </div>
       
         <div className="button-group">
-        <Link to="../pages/Nosotros.jsx" className="main-button">Quienes somos?</Link>
+        <Link to="#" className="main-button">Quienes somos?</Link>
         </div>
   
         <div className="social-buttons">
           <div className="center-logos">
-            <a href="https://www.facebook.com" className="facebook_button" target="_blank">
-              <img src="img/Logo_Facebook.png" alt="Facebook" />Facebook</a>
-            <a href="https://www.instagram.com" className="instagram_button" target="_blank">
-              <img src="img/Logo_IG.png" alt="Instagram" />Instagram</a>
-            <a href="https://www.twitter.com" className="twitter_button" target="_blank">
-              <img src="img/Logo_Twitter.png" alt="Twitter" />Twitter</a>
+            <Link to="https://www.facebook.com" className="facebook_button" target="_blank">
+              <img src="img/Logo_Facebook.png" alt="Facebook" />Facebook</Link>
+            <Link to="https://www.instagram.com" className="instagram_button" target="_blank">
+              <img src="img/Logo_IG.png" alt="Instagram" />Instagram</Link>
+            <Link to="https://www.twitter.com" className="twitter_button" target="_blank">
+              <img src="img/Logo_Twitter.png" alt="Twitter" />Twitter</Link>
           </div>
           <div className="right-logo">
-            <a href="https://www.whatsapp.com" className="wapp_button" target="_blank">
-              <img src="img/logo_wapp.png" alt="whatsapp" />Contactanos!</a>
+            <Link to="https://www.whatsapp.com" className="wapp_button" target="_blank">
+              <img src="img/Logo_wapp.png" alt="whatsapp" />Contactanos!</Link>
           </div>
           
           
