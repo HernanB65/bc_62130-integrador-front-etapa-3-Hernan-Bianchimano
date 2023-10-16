@@ -2,7 +2,7 @@
 export const get = async (url) => {
 
     try {
-        const respuesta = await fetch(url) // objeto respuesta.
+        const respuesta = await fetch(url)
         //console.log(respuesta)
         if ( !respuesta.ok ) {
             throw new Error(`Algo paso: ${respuesta.status}, ${respuesta.statusText}`)

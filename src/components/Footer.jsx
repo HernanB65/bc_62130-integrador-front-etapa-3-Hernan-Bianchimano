@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import './Footer.scss'
+
 const Footer = () => {
+  
   return (
     <footer>
       <header>
@@ -12,7 +14,7 @@ const Footer = () => {
         </div>
       
         <div className="button-group">
-        <Link to="#" className="main-button">Quienes somos?</Link>
+        <Link to="#" className="main-button">Politica de Privacidad</Link>
         </div>
   
         <div className="social-buttons">
