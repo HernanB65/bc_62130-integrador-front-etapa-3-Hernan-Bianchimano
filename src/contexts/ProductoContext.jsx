@@ -3,7 +3,8 @@ import {del, get, post, put} from "../utils/http";
 
 const ProductoContext = createContext()
 
-const url = 'http://localhost:8080/productos/'
+const url = 'https://bc-62130-integrador-etapa-3-h-b.onrender.com/api/productos/'
+
 
 const ProductoProvider = ( { children } ) => {
     const [productos, setProductos] = useState(null)
@@ -34,9 +35,16 @@ const ProductoProvider = ( { children } ) => {
 
     const actualizarProductoContext = async (productoEditar) => {
         try {
-            const productoEditado = await put(url, productoEditar.id, productoEditar)
+            const productoEditado = await put(url, productoEditar._id, productoEditar)
             console.log(productoEditado)
-            const nuevaDB = productos.map( producto => producto.id === productoEditado.id ? productoEditado : producto )
+            //const nuevaDB = productos.map( producto => producto._id === productoEditado._id ? productoEditado : producto )
+            const nuevaDB = productos.map( producto => {
+                if (producto._id === productoEditar._id ) {
+                    return productoEditar
+            } else {
+                return producto
+            }  
+        })
             setProductos(nuevaDB)
         } catch (error) {
             console.error('ERROR en actualizarProductoContext', error);
@@ -47,7 +55,7 @@ const ProductoProvider = ( { children } ) => {
         try {
             const productoEliminado = await del(url, id)
             console.log(productoEliminado) 
-            const nuevaDB = productos.filter(producto => producto.id !== id)
+            const nuevaDB = productos.filter(producto => producto._id !== id)
             setProductos(nuevaDB)
         } catch (error) {
             console.error(`Algo salió mal en eliminarProductoContext`, error)

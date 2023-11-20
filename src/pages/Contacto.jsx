@@ -19,13 +19,10 @@ const Contacto = () => {
      <textarea id="mensaje" name="mensaje" required></textarea>
      
      <button type="submit">Enviar</button>
-     <a href="/index.html" className="back-button">Volver a página principal</a>
+     <a href="http://localhost:5173/" className="back-button">Volver a página principal</a>
    </form>
 
-   <hr />
-
-   <hr />
-   
+     
    </>
    
   )

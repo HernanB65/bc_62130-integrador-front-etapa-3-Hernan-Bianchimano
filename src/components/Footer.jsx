@@ -24,11 +24,11 @@ const Footer = () => {
             <Link to="https://www.instagram.com" className="instagram_button" target="_blank">
               <img src="img/Logo_IG.png" alt="Instagram" />Instagram</Link>
             <Link to="https://www.twitter.com" className="twitter_button" target="_blank">
-              <img src="img/Logo_Twitter.png" alt="Twitter" />Twitter</Link>
+              <img src="img/Logo_Twitter.png" alt="Twitter" />X/Twitter</Link>
           </div>
           <div className="right-logo">
             <Link to="https://www.whatsapp.com" className="wapp_button" target="_blank">
-              <img src="img/Logo_wapp.png" alt="whatsapp" />Contactanos!</Link>
+              <img src="img/Logo_wapp.png" alt="whatsapp" />Contactanos por Whatsapp!</Link>
           </div>
           
           
