@@ -19,7 +19,7 @@ const Contacto = () => {
      <textarea id="mensaje" name="mensaje" required></textarea>
      
      <button type="submit">Enviar</button>
-     <a href="http://localhost:5173/" className="back-button">Volver a página principal</a>
+     <a href="https://hb-front-integrador-etapa-3.netlify.app/" className="back-button">Volver a página principal</a>
    </form>
 
      
