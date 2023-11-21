@@ -20,7 +20,7 @@ const TablaFila = ({ producto, setProductoAEditar }) => {
       confirmButtonText: 'Sí, eliminarlo'
     }).then((result) => {
       if (result.isConfirmed) {
-        eliminarProductoContext(id);
+        eliminarProductoContext(id)
         Swal.fire('Eliminado', 'El producto ha sido eliminado.', 'error');
       }
     });
@@ -44,7 +44,7 @@ const TablaFila = ({ producto, setProductoAEditar }) => {
       <td>{producto.envio ? 'SI' : 'NO'}</td>
       <td>
         <button onClick={() => handleUpdate(producto)}>Editar</button>
-        <button onClick={() => handleDelete(producto._id)}>Borrar</button>
+        <button onClick={() => handleDelete(producto.id)}>Borrar</button>
       </td>
     </tr>
   )
