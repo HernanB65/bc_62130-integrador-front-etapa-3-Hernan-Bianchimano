@@ -8,7 +8,7 @@ const Nosotros = () => {
   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae quasi expedita deserunt!</p>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias repudiandae nemo ea laudantium asperiores temporibus praesentium unde dolorum ipsam commodi quae ratione soluta veritatis dicta fugit architecto, autem quidem quas alias fugiat voluptate explicabo? Voluptatem culpa placeat sunt tempora earum illo reiciendis quod minus, impedit ratione laboriosam exercitationem. Delectus, quo!</p>
 
-  <Link to="http://localhost:5173/" className="back-button-dos">Volver a pagina principal</Link>
+  <Link to="" className="back-button-dos">Volver a pagina principal</Link>
   </>
 
   )
