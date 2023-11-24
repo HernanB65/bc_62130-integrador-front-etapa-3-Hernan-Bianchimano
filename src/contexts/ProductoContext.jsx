@@ -5,8 +5,7 @@ const ProductoContext = createContext()
 
 const url = 'https://bc-62130-integrador-etapa-3-h-b.onrender.com/api/productos/'
 
-//'http://localhost:8080/api/productos/'
-
+ 
 const ProductoProvider = ( { children } ) => {
     const [productos, setProductos] = useState(null)
 
